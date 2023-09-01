@@ -1,0 +1,8 @@
+ip route 0.0.0.0 0.0.0.0 10.10.10.10
+interface loopback 3
+ip address 3.3.3.3 255.255.255.255
+exit
+router ospf 1
+network 0.0.0.0 0.0.0.0 area 0
+distance 60
+default-information originate
