@@ -2,21 +2,33 @@
 **Network Automation** has been the name of the game, in past couple of decades. With techologies like **Software Defined Networking(SDN)** and **Intent Based Networking(IBN)** being used widespreadly in the industry today, this project is a small effort towards understandig Network Programmability and Automation using Python. All the modules used in this project have been explained below;
 
 # Contents
-* [Handling CSV Files](#handling-csv-files)
+* [Handling CSV Files](#1-handling-csv-files)
 * **Data Serialization and Deserialization**
-    * [Json](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/JSON)
-    * [Pickle](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/Pickle)
-* [Serial/Console Connection](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/Serial_Conn)
+    * [Json](#json)
+    * [Pickle](#pickle)
+* [Serial/Console Connection](#3-serialconsole-connection)
 * **Network Automation With**
-    * [Telnet](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/Telnet_Conn)
-    * [Paramiko](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/Paramiko)
-    * [Netmiko](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/Netmiko)
-    * [NAPALM](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/Napalm)
-* [Multiprocessing and Multithreading](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/Multiprocessing)
+    * [Telnet](#telnet)
+    * [Paramiko](#paramiko)
+    * [Netmiko](#netmiko)
+    * [NAPALM](#napalm)
+* [Multiprocessing and Multithreading](#5-multiprocessing-and-multithreading)
 * **Ansible Automation**
-    * [Ansible Playbooks](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/Ansible)
+    * [Ansible Playbooks](#ansible-playbooks)
 
-## Handling CSV Files
+## 1. Handling CSV Files
+## 2. Data Serialization and Deserialization
+## JSON
+## Pickle
+## 3. Serial/Console Connection
+## 4. Network Automation With
+## Telnet
+## Paramiko
+## Netmiko
+## NAPALM
+## 5. Multiprocessing and Multithreading
+## 6. Ansible Automation
+## Ansible Playbooks
 
 
 # CREDITS
