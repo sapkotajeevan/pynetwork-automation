@@ -1,0 +1,21 @@
+---
+- name: Run a command in Loop, Create Multiple Users
+  hosts: server1
+  gather_facts: no
+  become: yes
+  become_user: root
+  connection: ssh
+  vars:
+          new_users:
+                  - u1
+                  - u2
+                  - u3
+  tasks:
+          - name: Add users using a loop
+            user:
+                    name: "{{item}}"
+                    state: absent
+                    groups: sudo
+            loop:
+                    "{{new_users}}"
+...
