@@ -1,0 +1,19 @@
+---
+- name: Configuring Cisco IOS Device
+  gather_facts: no
+  hosts: routers         # You can use indvidual hostnames, I used routers group
+  connection: network_cli
+
+  tasks:
+          - name: Basic Configuration
+            ios_config:
+                    save_when: modified
+                    lines:
+                            - hostname "{{inventory_hostname}}"      # This is Jinja2 Template,grabs hostname from inventory file
+                            - ip name-server 8.8.8.8
+                            - no ip http server
+                            - ip http secure-server
+            register: output
+          - name: Print Output
+            debug: var=output
+...
