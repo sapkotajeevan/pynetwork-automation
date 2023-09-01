@@ -1,0 +1,11 @@
+---
+- name: Configuring Cisco IOS Device
+  gather_facts: no
+  hosts: routers
+  connection: network_cli
+
+  tasks:
+          - name: Backing Up Configuration
+            ios_config:
+                    backup: yes
+...
