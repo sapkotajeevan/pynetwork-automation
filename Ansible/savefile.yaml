@@ -1,0 +1,17 @@
+---
+- name: Running show commands on Cisco IOS
+  hosts: routers
+  gather_facts: false
+  connection: network_cli
+
+  tasks:
+          - name: Running Commands on Cisco IOS node
+            ios_command:
+                    commands:
+                            - show version
+            register: my_config 
+          - name: Save output to file on a disk
+            copy:
+                    content: "{{my_config.stdout[0]}}" 
+                    dest: "/home/jeevan/Desktop/{{inventory_hostname}}.txt"
+... 
