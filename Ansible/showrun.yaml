@@ -1,0 +1,12 @@
+---
+- name: Show Running Configuration
+  hosts: routers
+  gather_facts: false
+
+  tasks:
+    - name: Running Configuration
+      raw: "show ip int br"
+      register: output
+    - name: Printing Output
+      debug: var=output.stdout_lines
+...
