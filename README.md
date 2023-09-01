@@ -3,17 +3,17 @@
 
 # Contents
 * [Handling CSV Files](#1-handling-csv-files)
-* **Data Serialization and Deserialization**
+* [Data Serialization and Deserialization](#2-data-serialization-and-deserialization)
     * [Json](#json)
     * [Pickle](#pickle)
 * [Serial/Console Connection](#3-serialconsole-connection)
-* **Network Automation With**
+* [Network Automation With](#4-network-automation-with)
     * [Telnet](#telnet)
     * [Paramiko](#paramiko)
     * [Netmiko](#netmiko)
     * [NAPALM](#napalm)
 * [Multiprocessing and Multithreading](#5-multiprocessing-and-multithreading)
-* **Ansible Automation**
+* [Ansible Automation](#6-ansible-automation)
     * [Ansible Playbooks](#ansible-playbooks)
 
 ## 1. Handling CSV Files
