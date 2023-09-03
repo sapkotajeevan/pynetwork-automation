@@ -1,5 +1,5 @@
 # About The Project
-**Network Automation** has been the name of the game, in past couple of decades. The technologies like **Software Defined Networking(SDN)** and **Intent Based Networking(IBN)** are being widespreadly used in the industry today. This project is a small effort towards understanding Network Programmability and Automation using Python. All the modules used in this project have been explained below;
+**Network Automation** has been the name of the game, in past couple of decades. The technologies like **Software Defined Networking(SDN)** and **Intent Based Networking(IBN)** are being widespreadly used in the industry today. In this project, I have attempted to explore Network Programmability and Automation options using Python. All the modules used in this project have been explained below;
 
 # Contents
 * [Handling CSV Files](#1-handling-csv-files)
@@ -38,7 +38,7 @@ In [Serial_Conn](https://github.com/sapkotajeevan/pynetwork-automation/tree/mast
    * **Library Used :** `serial` `time`
    * `config.txt` has the commands to be run over Console connection.
    * `myserial.py` is a refactored serial module that has different console operation related definitions such as opening console, running command in console, reading from console and checking initial configuration dialog from console.
-   * `Console.py` uses `myserial.py` module, reads configuration from `config.txt` and deploys it over the device via console port
+   * `Console.py` uses `myserial.py` module, reads configuration from `config.txt`, and deploys it over the device via console port
 
 ## 4. Network Automation With
 ## Telnet
@@ -68,8 +68,8 @@ In [Netmiko](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/N
 ## NAPALM
 In [Napalm](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/Napalm)
    * **Library Used :** `napalm` `json`
-   * `display.py` connects to a device using **get_network_driver** feature of napalm, ping the IP, and prints to echo reply messages
-   * `sendcommand.py` is another simply Napalm script for pushing configuration to the devices
+   * `display.py` connects to a device using **get_network_driver** feature of napalm, pings the IP, and prints the echo reply messages
+   * `sendcommand.py` is another simple Napalm script for pushing configuration to the devices
    * `configmgmt.py` loads the config from `config.txt`, makes comparison with the existing config. The differential configuration is commited to the device, while matching one is retained/rolledback
    * `mergeconfig.py` loads the configuration from `configadd.txt`, compares the config with the running config. Differential config is merged with the current, while matching configuration is retained
    
@@ -82,7 +82,7 @@ In [Multiprocessing](https://github.com/sapkotajeevan/pynetwork-automation/tree/
 ## Ansible Playbooks
 In [Ansible](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/Ansible)
    * Ansible uses `Behavioral Parameters.png` to interact with the remote hosts. An example configuration is shown in `behav_invparams.yaml` script
-   * It uses **inventory files** to stor hosts information (IP, Hostname, etc.) which are available in `hosts`, and `hosts1` file
+   * It uses **inventory files** to store hosts information (IP, Hostname, etc.) which are available in `hosts`, and `hosts1` file
    * `ios_config.yaml` is a basic ansible playbook to display output from Cisco Ios, whereas `ios_config_basics.yaml` pushes network change configurations to the hosts available in **routers** section of `hosts1`
    * `linuxloops.yaml` is a simple playbook that reads **server1** section of `hosts1`, loops through the servers, and adds new users
    * `ios_config_backup.yaml` playbook backs up configuration of hosts available in `hosts1`
@@ -92,7 +92,7 @@ In [Ansible](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/A
 
 
 # CREDITS
-**Prof. Andrei Dumitrscu** for his brilliant course **Master Network Automation with Python for Network Engineers** frorm which references have been taken to come up with this project
+**Prof. Andrei Dumitrscu** : **Master Network Automation with Python for Network Engineers Course**
 
 # LICENSE
 [Terms and Conditions](https://github.com/sapkotajeevan/pynetwork-automation/blob/master/LICENSE)
