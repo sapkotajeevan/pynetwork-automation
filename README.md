@@ -1,5 +1,5 @@
 # About The Project
-**Network Automation** has been the name of the game, in past couple of decades. With technologies like **Software Defined Networking(SDN)** and **Intent Based Networking(IBN)** being widespreadly used in the industry today, this project is a small effort towards understanding Network Programmability and Automation using Python. All the modules used in this project have been explained below;
+**Network Automation** has been the name of the game, in past couple of decades. The technologies like **Software Defined Networking(SDN)** and **Intent Based Networking(IBN)** are being widespreadly used in the industry today. This project is a small effort towards understanding Network Programmability and Automation using Python. All the modules used in this project have been explained below;
 
 # Contents
 * [Handling CSV Files](#1-handling-csv-files)
