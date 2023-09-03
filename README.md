@@ -1,5 +1,5 @@
 # About The Project
-**Network Automation** has been the name of the game, in past couple of decades. With techologies like **Software Defined Networking(SDN)** and **Intent Based Networking(IBN)** being used widespreadly in the industry today, this project is a small effort towards understandig Network Programmability and Automation using Python. All the modules used in this project have been explained below;
+**Network Automation** has been the name of the game, in past couple of decades. With technologies like **Software Defined Networking(SDN)** and **Intent Based Networking(IBN)** being widespreadly used in the industry today, this project is a small effort towards understanding Network Programmability and Automation using Python. All the modules used in this project have been explained below;
 
 # Contents
 * [Handling CSV Files](#1-handling-csv-files)
@@ -51,6 +51,13 @@ In [Paramiko](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/
    * `routerconfigbackup.py` uses refactored `myparamiko.py` module to take configuration backup of the device and save it in the directory `Directory` including timestamps
    * `scpclient` performs a simple operation of securely copying files to and from another Linux Instance
 ## Netmiko
+In [Netmiko](https://github.com/sapkotajeevan/pynetwork-automation/tree/master/Netmiko)
+   * **Library Used :** `netmiko`
+   * `test.py` establishes connection to router whereas `netmiko_linux.py` does with linux servers, and sends simple command utilizing **ConnectHandler** sub-module of Netmiko. `modes.py` shows different ways ConnectHandler connection could be invoked
+   * `routerscp.py` utilizes **file_transfer** submodule of Netmiko to securely copy `devices.txt` file to a cisco device storage named **disk0:**
+   * `routerbackup.py` is a simple Netmiko script which uses additional **datetime** module, reads IP from `devices.txt`, takes backup of the running config and writes to a file. `Router1-2020-7-23.txt`, `Router2-2020-7-23.txt`, `Router3-2020-7-23.txt` are the saved config files of Router 1,2 and 3 respectively
+   *  `multiconfig_from_files.py` reads IP from `devices.txt`, stores those IPs in a list. For each respective IPs, configuration files `ConfigR1.txt`, `ConfigR2.txt`, and `ConfigR3.txt` is taken as input, and pushed to the device
+   *  `Assignment.py` demonstrates how Network Automation can be achieved using Netmiko
 ## NAPALM
 ## 5. Multiprocessing and Multithreading
 ## 6. Ansible Automation
